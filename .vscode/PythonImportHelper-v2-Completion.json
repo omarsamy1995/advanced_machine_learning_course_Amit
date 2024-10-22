@@ -295,30 +295,66 @@
         "documentation": {}
     },
     {
+        "label": "MathClass",
+        "kind": 6,
+        "importPath": "matriales.Workshop.code.calculator_task",
+        "description": "matriales.Workshop.code.calculator_task",
+        "peekOfCode": "class MathClass():\n    def __init__(self, num1=0, num2=0):\n        self.num1 = num1\n        self.num2 = num2\n    def factorial(self):\n        result = 1\n        for i in range(0, self.num1):\n            result *= self.num1 - i\n        return result\n    def isPrime(self):",
+        "detail": "matriales.Workshop.code.calculator_task",
+        "documentation": {}
+    },
+    {
+        "label": "num1",
+        "kind": 5,
+        "importPath": "matriales.Workshop.code.calculator_task",
+        "description": "matriales.Workshop.code.calculator_task",
+        "peekOfCode": "num1 = int(input(\"Enter your first number: \"))\nnum2 = int(input(\"Enter your second number: \"))\nM = MathClass(num1 , num2)\nprint(M.factorial())\nprint(M.dividors())\nprint(M.isPrime())",
+        "detail": "matriales.Workshop.code.calculator_task",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "matriales.Workshop.code.calculator_task",
+        "description": "matriales.Workshop.code.calculator_task",
+        "peekOfCode": "num2 = int(input(\"Enter your second number: \"))\nM = MathClass(num1 , num2)\nprint(M.factorial())\nprint(M.dividors())\nprint(M.isPrime())",
+        "detail": "matriales.Workshop.code.calculator_task",
+        "documentation": {}
+    },
+    {
+        "label": "M",
+        "kind": 5,
+        "importPath": "matriales.Workshop.code.calculator_task",
+        "description": "matriales.Workshop.code.calculator_task",
+        "peekOfCode": "M = MathClass(num1 , num2)\nprint(M.factorial())\nprint(M.dividors())\nprint(M.isPrime())",
+        "detail": "matriales.Workshop.code.calculator_task",
+        "documentation": {}
+    },
+    {
         "label": "Chatbot",
         "kind": 6,
-        "importPath": "matriales.Workshop.code.chat_pot",
-        "description": "matriales.Workshop.code.chat_pot",
+        "importPath": "matriales.Workshop.code.chat_pot_class_task",
+        "description": "matriales.Workshop.code.chat_pot_class_task",
         "peekOfCode": "class Chatbot:\n    def chat(self):\n        \"\"\"Start the chatbot conversation.\"\"\"\n        print(\"Chatbot: Hi! How can I assist you today?\")\n        while True:\n            user_input = input(\"User: \").lower()\n            response = get_response(user_input)\n            print(\"Chatbot:\", response)\n            if user_input == \"goodbye\":\n                break",
-        "detail": "matriales.Workshop.code.chat_pot",
+        "detail": "matriales.Workshop.code.chat_pot_class_task",
         "documentation": {}
     },
     {
         "label": "get_response",
         "kind": 2,
-        "importPath": "matriales.Workshop.code.chat_pot",
-        "description": "matriales.Workshop.code.chat_pot",
+        "importPath": "matriales.Workshop.code.chat_pot_class_task",
+        "description": "matriales.Workshop.code.chat_pot_class_task",
         "peekOfCode": "def get_response(user_input):\n    for key in responses:\n        if key in user_input:\n            return random.choice(responses[key])\n    return random.choice(responses[\"default\"])\n# Chatbot class\nclass Chatbot:\n    def chat(self):\n        \"\"\"Start the chatbot conversation.\"\"\"\n        print(\"Chatbot: Hi! How can I assist you today?\")",
-        "detail": "matriales.Workshop.code.chat_pot",
+        "detail": "matriales.Workshop.code.chat_pot_class_task",
         "documentation": {}
     },
     {
         "label": "chatbot",
         "kind": 5,
-        "importPath": "matriales.Workshop.code.chat_pot",
-        "description": "matriales.Workshop.code.chat_pot",
+        "importPath": "matriales.Workshop.code.chat_pot_class_task",
+        "description": "matriales.Workshop.code.chat_pot_class_task",
         "peekOfCode": "chatbot = Chatbot()\nchatbot.chat()",
-        "detail": "matriales.Workshop.code.chat_pot",
+        "detail": "matriales.Workshop.code.chat_pot_class_task",
         "documentation": {}
     },
     {
