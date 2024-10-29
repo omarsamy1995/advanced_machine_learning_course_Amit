@@ -9,7 +9,7 @@ class Generate:
             rand_index = random.randrange(0,num_of_char)
             password+=char[rand_index]
         return password
-password_length = int(input("Enter number of char in password: "))
+password_length = 8
 G = Generate()
 
 random_password = G.generate_password(password_length)

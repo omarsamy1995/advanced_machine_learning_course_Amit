@@ -1,0 +1,10 @@
+{
+    "omar": {
+        "name": "omar",
+        "balance": 90000.0
+    },
+    "mohamed": {
+        "name": "mohamed",
+        "balance": 1000.0
+    }
+}

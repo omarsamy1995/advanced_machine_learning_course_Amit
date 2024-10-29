@@ -1,0 +1,23 @@
+{
+    "name": "andlosiat",
+    "location": "smoha",
+    "departments": [
+        {
+            "name": "omega",
+            "patients": [
+                {
+                    "name": "omar",
+                    "age": 19,
+                    "medical_record": "7sasia"
+                }
+            ],
+            "staff": [
+                {
+                    "name": "mohamed",
+                    "age": 60,
+                    "position": "7sasia"
+                }
+            ]
+        }
+    ]
+}
