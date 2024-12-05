@@ -1,5 +1,14 @@
 [
     {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
         "label": "tkinter",
         "kind": 6,
         "isExtraImport": true,
@@ -10,6 +19,22 @@
     },
     {
         "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "tkinter",
         "description": "tkinter",
         "isExtraImport": true,
@@ -73,6 +98,31 @@
         "description": "responses",
         "isExtraImport": true,
         "detail": "responses",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
@@ -964,6 +1014,51 @@
         "description": "matriales.Workshop.code.reverse_string",
         "peekOfCode": "R = reversing(s)\nprint(R.fun())",
         "detail": "matriales.Workshop.code.reverse_string",
+        "documentation": {}
+    },
+    {
+        "label": "SalaryPredictionApp",
+        "kind": 6,
+        "importPath": "matriales.tk",
+        "description": "matriales.tk",
+        "peekOfCode": "class SalaryPredictionApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.geometry(\"1350x700+0+0\")\n        self.root.title(\"AMIT - Machine Learning Diploma\")\n        self.root.configure(bg=\"white\")\n        # title\n        title = Label(self.root, text=\"Amit-Machine Learning Diploma\",  compound=LEFT,\n                      font=(\"times new roman\", 40, \"bold\"), bg=\"#010c48\", fg=\"white\", anchor=\"w\", padx=20)\n        title.place(x=0, y=0, relwidth=1, height=70)",
+        "detail": "matriales.tk",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "matriales.tk",
+        "description": "matriales.tk",
+        "peekOfCode": "df = pd.read_csv(\"D:/diploma AI/advanced_machine_learning_course_Amit/matriales/Machine_learning/code/Salary_Data.csv\")\nX = df[['YearsExperience']]  \ny = df['Salary']  \nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# إعداد واجهة Tkinter\nclass SalaryPredictionApp:\n    def __init__(self, root):\n        self.root = root",
+        "detail": "matriales.tk",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "matriales.tk",
+        "description": "matriales.tk",
+        "peekOfCode": "X = df[['YearsExperience']]  \ny = df['Salary']  \nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# إعداد واجهة Tkinter\nclass SalaryPredictionApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.geometry(\"1350x700+0+0\")",
+        "detail": "matriales.tk",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "matriales.tk",
+        "description": "matriales.tk",
+        "peekOfCode": "y = df['Salary']  \nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# إعداد واجهة Tkinter\nclass SalaryPredictionApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.geometry(\"1350x700+0+0\")\n        self.root.title(\"AMIT - Machine Learning Diploma\")",
+        "detail": "matriales.tk",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "matriales.tk",
+        "description": "matriales.tk",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\n# إعداد واجهة Tkinter\nclass SalaryPredictionApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.geometry(\"1350x700+0+0\")\n        self.root.title(\"AMIT - Machine Learning Diploma\")\n        self.root.configure(bg=\"white\")\n        # title",
+        "detail": "matriales.tk",
         "documentation": {}
     }
 ]

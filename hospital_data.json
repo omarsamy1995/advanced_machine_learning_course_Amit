@@ -1,21 +1,21 @@
 {
-    "name": "andlosiat",
-    "location": "smoha",
+    "name": "ABC",
+    "location": "cairo",
     "departments": [
         {
-            "name": "omega",
+            "name": "gggggg",
             "patients": [
                 {
-                    "name": "omar",
-                    "age": 19,
-                    "medical_record": "7sasia"
+                    "name": "mohamed",
+                    "age": 44,
+                    "medical_record": "pdpd"
                 }
             ],
             "staff": [
                 {
-                    "name": "mohamed",
-                    "age": 60,
-                    "position": "7sasia"
+                    "name": "kill",
+                    "age": 50,
+                    "position": "omarrrr"
                 }
             ]
         }

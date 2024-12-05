@@ -1,0 +1,22 @@
+{
+    "name": "ABC",
+    "location": "Cairo",
+    "departments": [
+        {
+            "name": "suargy",
+            "patients": [
+                {
+                    "name": "test",
+                    "age": 50,
+                    "medical_record": "cough"
+                }
+            ],
+            "staff": [
+                {
+                    "name": "rrr",
+                    "age": 90,
+                    "position": "doctor"
+                }
+            ]
+        }
+    ]
