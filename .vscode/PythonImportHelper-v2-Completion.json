@@ -26,6 +26,22 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
         "label": "filedialog",
         "importPath": "tkinter",
         "description": "tkinter",
@@ -42,15 +58,7 @@
         "documentation": {}
     },
     {
-        "label": "*",
-        "importPath": "tkinter",
-        "description": "tkinter",
-        "isExtraImport": true,
-        "detail": "tkinter",
-        "documentation": {}
-    },
-    {
-        "label": "*",
+        "label": "ttk",
         "importPath": "tkinter",
         "description": "tkinter",
         "isExtraImport": true,
@@ -110,29 +118,11 @@
         "documentation": {}
     },
     {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
         "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
-        "documentation": {}
-    },
-    {
-        "label": "seaborn",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "seaborn",
-        "description": "seaborn",
-        "detail": "seaborn",
-        "documentation": {}
-    },
-    {
-        "label": "FigureCanvasTkAgg",
-        "importPath": "matplotlib.backends.backend_tkagg",
-        "description": "matplotlib.backends.backend_tkagg",
-        "isExtraImport": true,
-        "detail": "matplotlib.backends.backend_tkagg",
+        "detail": "sklearn.linear_model",
         "documentation": {}
     },
     {
@@ -141,6 +131,22 @@
         "description": "sklearn.linear_model",
         "isExtraImport": true,
         "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LogisticRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
@@ -174,6 +180,72 @@
         "importPath": "pyinstaller",
         "description": "pyinstaller",
         "detail": "pyinstaller",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "SVC",
+        "importPath": "sklearn.svm",
+        "description": "sklearn.svm",
+        "isExtraImport": true,
+        "detail": "sklearn.svm",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "FigureCanvasTkAgg",
+        "importPath": "matplotlib.backends.backend_tkagg",
+        "description": "matplotlib.backends.backend_tkagg",
+        "isExtraImport": true,
+        "detail": "matplotlib.backends.backend_tkagg",
         "documentation": {}
     },
     {
@@ -561,123 +633,6 @@
         "description": "matriales.Firs_Final_project.unique_word",
         "peekOfCode": "word_counts = count_words(words)\nprint(word_counts)",
         "detail": "matriales.Firs_Final_project.unique_word",
-        "documentation": {}
-    },
-    {
-        "label": "load_file",
-        "kind": 2,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "def load_file():\n    \"\"\"Load a CSV file.\"\"\"\n    global data\n    file_path = filedialog.askopenfilename(filetypes=[(\"CSV files\", \"*.csv\")])\n    if not file_path:\n        return\n    try:\n        data = pd.read_csv(file_path)\n        messagebox.showinfo(\"File Loaded\", f\"File loaded successfully: {file_path}\")\n        display_preview()",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "display_preview",
-        "kind": 2,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "def display_preview():\n    \"\"\"Display a preview of the dataset.\"\"\"\n    if data is None:\n        messagebox.showwarning(\"No Data\", \"Please load a dataset first.\")\n        return\n    preview_window = tk.Toplevel(root)\n    preview_window.title(\"Dataset Preview\")\n    text_widget = tk.Text(preview_window, wrap=\"none\", height=20, width=80)\n    text_widget.pack(expand=True, fill=\"both\")\n    text_widget.insert(\"1.0\", data.head().to_string())",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "show_summary",
-        "kind": 2,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "def show_summary():\n    \"\"\"Show summary statistics of the dataset.\"\"\"\n    if data is None:\n        messagebox.showwarning(\"No Data\", \"Please load a dataset first.\")\n        return\n    summary_window = tk.Toplevel(root)\n    summary_window.title(\"Dataset Summary\")\n    text_widget = tk.Text(summary_window, wrap=\"none\", height=20, width=80)\n    text_widget.pack(expand=True, fill=\"both\")\n    text_widget.insert(\"1.0\", data.describe().to_string())",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "plot_heatmap",
-        "kind": 2,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "def plot_heatmap():\n    \"\"\"Plot a heatmap of the correlation matrix.\"\"\"\n    if data is None:\n        messagebox.showwarning(\"No Data\", \"Please load a dataset first.\")\n        return\n    numeric_data = data.select_dtypes(include=[\"number\"])\n    if numeric_data.empty:\n        messagebox.showerror(\"Error\", \"No numeric columns found for correlation.\")\n        return\n    correlation_matrix = numeric_data.corr()",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "scatter_plot",
-        "kind": 2,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "def scatter_plot():\n    \"\"\"Plot a scatter plot based on user input.\"\"\"\n    if data is None:\n        messagebox.showwarning(\"No Data\", \"Please load a dataset first.\")\n        return\n    scatter_window = tk.Toplevel(root)\n    scatter_window.title(\"Scatter Plot\")\n    # Dropdown menus for selecting columns\n    col1_label = tk.Label(scatter_window, text=\"Select X-axis:\")\n    col1_label.pack()",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "root",
-        "kind": 5,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "root = tk.Tk()\nroot.title(\"Data Science Final Project GUI\")\nroot.geometry(\"800x600\")\n# Global variable to hold dataset\ndata = None\ndef load_file():\n    \"\"\"Load a CSV file.\"\"\"\n    global data\n    file_path = filedialog.askopenfilename(filetypes=[(\"CSV files\", \"*.csv\")])\n    if not file_path:",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "data",
-        "kind": 5,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "data = None\ndef load_file():\n    \"\"\"Load a CSV file.\"\"\"\n    global data\n    file_path = filedialog.askopenfilename(filetypes=[(\"CSV files\", \"*.csv\")])\n    if not file_path:\n        return\n    try:\n        data = pd.read_csv(file_path)\n        messagebox.showinfo(\"File Loaded\", f\"File loaded successfully: {file_path}\")",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "load_button",
-        "kind": 5,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "load_button = tk.Button(root, text=\"Load CSV File\", command=load_file)\nload_button.pack(pady=10)\npreview_button = tk.Button(root, text=\"Preview Dataset\", command=display_preview)\npreview_button.pack(pady=10)\nsummary_button = tk.Button(root, text=\"Show Summary\", command=show_summary)\nsummary_button.pack(pady=10)\nheatmap_button = tk.Button(root, text=\"Plot Heatmap\", command=plot_heatmap)\nheatmap_button.pack(pady=10)\nscatter_button = tk.Button(root, text=\"Scatter Plot\", command=scatter_plot)\nscatter_button.pack(pady=10)",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "preview_button",
-        "kind": 5,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "preview_button = tk.Button(root, text=\"Preview Dataset\", command=display_preview)\npreview_button.pack(pady=10)\nsummary_button = tk.Button(root, text=\"Show Summary\", command=show_summary)\nsummary_button.pack(pady=10)\nheatmap_button = tk.Button(root, text=\"Plot Heatmap\", command=plot_heatmap)\nheatmap_button.pack(pady=10)\nscatter_button = tk.Button(root, text=\"Scatter Plot\", command=scatter_plot)\nscatter_button.pack(pady=10)\n# Add an Exit Button\nexit_button = tk.Button(root, text=\"Exit\", command=root.quit)",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "summary_button",
-        "kind": 5,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "summary_button = tk.Button(root, text=\"Show Summary\", command=show_summary)\nsummary_button.pack(pady=10)\nheatmap_button = tk.Button(root, text=\"Plot Heatmap\", command=plot_heatmap)\nheatmap_button.pack(pady=10)\nscatter_button = tk.Button(root, text=\"Scatter Plot\", command=scatter_plot)\nscatter_button.pack(pady=10)\n# Add an Exit Button\nexit_button = tk.Button(root, text=\"Exit\", command=root.quit)\nexit_button.pack(pady=10)\n# Run Tkinter main loop",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "heatmap_button",
-        "kind": 5,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "heatmap_button = tk.Button(root, text=\"Plot Heatmap\", command=plot_heatmap)\nheatmap_button.pack(pady=10)\nscatter_button = tk.Button(root, text=\"Scatter Plot\", command=scatter_plot)\nscatter_button.pack(pady=10)\n# Add an Exit Button\nexit_button = tk.Button(root, text=\"Exit\", command=root.quit)\nexit_button.pack(pady=10)\n# Run Tkinter main loop\nroot.mainloop()",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "scatter_button",
-        "kind": 5,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "scatter_button = tk.Button(root, text=\"Scatter Plot\", command=scatter_plot)\nscatter_button.pack(pady=10)\n# Add an Exit Button\nexit_button = tk.Button(root, text=\"Exit\", command=root.quit)\nexit_button.pack(pady=10)\n# Run Tkinter main loop\nroot.mainloop()",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "documentation": {}
-    },
-    {
-        "label": "exit_button",
-        "kind": 5,
-        "importPath": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "description": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
-        "peekOfCode": "exit_button = tk.Button(root, text=\"Exit\", command=root.quit)\nexit_button.pack(pady=10)\n# Run Tkinter main loop\nroot.mainloop()",
-        "detail": "matriales.GUI_Data.code.GUI_Data_scince_To_Upload_data",
         "documentation": {}
     },
     {
@@ -1227,6 +1182,15 @@
         "description": "matriales.Workshop.code.reverse_string",
         "peekOfCode": "R = reversing(s)\nprint(R.fun())",
         "detail": "matriales.Workshop.code.reverse_string",
+        "documentation": {}
+    },
+    {
+        "label": "DataScienceGUI",
+        "kind": 6,
+        "importPath": "GUI_Data_scince_To_Upload_data",
+        "description": "GUI_Data_scince_To_Upload_data",
+        "peekOfCode": "class DataScienceGUI:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"Advanced Data Science GUI\")\n        self.root.geometry(\"1000x700\")\n        # Global variables\n        self.data = None\n        self.X_train, self.X_test, self.y_train, self.y_test = None, None, None, None\n        self.selected_model = None\n        # Notebook tabs",
+        "detail": "GUI_Data_scince_To_Upload_data",
         "documentation": {}
     }
 ]
